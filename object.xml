@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="23" inline="false" x="129" y="36">
+  <block type="controls_whileUntil" id="23" inline="false" x="131" y="37">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="37">
@@ -103,6 +103,20 @@
                                                     <field name="OBJECT">REAR</field>
                                                   </block>
                                                 </value>
+                                                <next>
+                                                  <block type="movement_setmotors" id="242" inline="true">
+                                                    <value name="BOTHMOVLEFT">
+                                                      <block type="sensor_object" id="244">
+                                                        <field name="OBJECT">RIGHTFRONT</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="BOTHMOVRIGHT">
+                                                      <block type="sensor_object" id="243">
+                                                        <field name="OBJECT">LEFTFRONT</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
                                               </block>
                                             </next>
                                           </block>
