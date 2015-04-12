@@ -7,9 +7,7 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="oled_drawtext" id="513">
-        <field name="TEXT">:)</field>
-      </block>
+      <block type="oled_cleardisplay" id="522"></block>
     </statement>
     <next>
       <block type="controls_whileUntil" id="23" inline="false">
