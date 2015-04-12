@@ -107,8 +107,18 @@
                                                   <block type="controls_if" id="262" inline="false">
                                                     <mutation elseif="1" else="1"></mutation>
                                                     <value name="IF0">
-                                                      <block type="sensor_object" id="263">
-                                                        <field name="OBJECT">LEFTFRONT</field>
+                                                      <block type="logic_compare" id="375" inline="true">
+                                                        <field name="OP">LT</field>
+                                                        <value name="A">
+                                                          <block type="sensor_object" id="263">
+                                                            <field name="OBJECT">LEFTFRONT</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="math_number" id="382">
+                                                            <field name="NUM">80</field>
+                                                          </block>
+                                                        </value>
                                                       </block>
                                                     </value>
                                                     <statement name="DO0">
@@ -125,8 +135,18 @@
                                                       </block>
                                                     </statement>
                                                     <value name="IF1">
-                                                      <block type="sensor_object" id="292">
-                                                        <field name="OBJECT">RIGHTFRONT</field>
+                                                      <block type="logic_compare" id="383" inline="true">
+                                                        <field name="OP">LT</field>
+                                                        <value name="A">
+                                                          <block type="sensor_object" id="384">
+                                                            <field name="OBJECT">LEFTFRONT</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="math_number" id="385">
+                                                            <field name="NUM">80</field>
+                                                          </block>
+                                                        </value>
                                                       </block>
                                                     </value>
                                                     <statement name="DO1">
