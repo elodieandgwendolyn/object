@@ -1,1 +1,60 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_whileUntil" id="23" inline="false" x="129" y="36">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="37">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="oled_cleardisplay" id="46">
+        <next>
+          <block type="oled_setcursor" id="62" inline="true">
+            <value name="STARTX">
+              <block type="math_number" id="69">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <value name="STARTY">
+              <block type="math_number" id="70">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <next>
+              <block type="oled_drawnumber" id="125" inline="true">
+                <value name="NUMBER">
+                  <block type="sensor_object" id="101">
+                    <field name="OBJECT">LEFTFRONT</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_setcursor" id="126" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="127">
+                        <field name="NUM">110</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="128">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="oled_drawnumber" id="152" inline="true">
+                        <value name="NUMBER">
+                          <block type="sensor_object" id="168">
+                            <field name="OBJECT">RIGHTFRONT</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
