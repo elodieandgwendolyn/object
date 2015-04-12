@@ -1,16 +1,21 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="23" inline="false" x="131" y="37">
+  <block type="controls_whileUntil" id="473" inline="false" x="135" y="-27">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
-      <block type="sensor_button" id="37">
-        <field name="OBJECT">ENTER</field>
+      <block type="sensor_button" id="488">
+        <field name="OBJECT">UP</field>
       </block>
     </value>
-    <statement name="DO">
-      <block type="oled_cleardisplay" id="46">
-        <next>
-          <block type="oled_drawtext" id="412">
-            <field name="TEXT">Elodie and Gwendolyn :)</field>
+    <next>
+      <block type="controls_whileUntil" id="23" inline="false">
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="sensor_button" id="37">
+            <field name="OBJECT">ENTER</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="oled_cleardisplay" id="46">
             <next>
               <block type="oled_setcursor" id="62" inline="true">
                 <value name="STARTX">
@@ -200,11 +205,11 @@
               </block>
             </next>
           </block>
+        </statement>
+        <next>
+          <block type="movement_stop" id="254"></block>
         </next>
       </block>
-    </statement>
-    <next>
-      <block type="movement_stop" id="254"></block>
     </next>
   </block>
 </xml>
